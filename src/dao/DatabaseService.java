@@ -16,7 +16,7 @@ public class DatabaseService {
     private static final String user = "root";
     private static final String password = "";
     
-    public static Connection getConnextion() throws SQLException{
+    public static Connection getConnection() throws java.sql.SQLException{
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
         }catch(ClassNotFoundException e){
